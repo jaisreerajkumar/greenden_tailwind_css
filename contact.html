@@ -18,6 +18,7 @@
       <h1 class="text-2xl">Greenden</h1>
 
       <svg
+      id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -42,12 +43,29 @@
           >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="./index.html"
+          <a class="hover:underline hover:text-black" href="./contact.html"
             >Contact</a
           >
         </li>
       </ul>
     </nav>
+     <!-- Side Navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+      <div class="text-right p-5">
+        <p  id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+     </section>
     <!-- Contact form -->
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -122,5 +140,6 @@
       </p>
       <p class="underline">@2025 greenden.com</p>
     </section>
+    <script src="./contact.js"></script>
   </body>
 </html>
